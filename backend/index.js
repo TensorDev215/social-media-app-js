@@ -27,7 +27,6 @@ app.use(cors({origin: true, credentials: true}))
 app.use('/api/user', userRoutes);
 app.use('/api/post', postRoutes);
 
-
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log("server is running on port " + port) 
